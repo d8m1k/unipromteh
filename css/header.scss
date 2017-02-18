@@ -1,0 +1,41 @@
+@import "inc/inc";
+
+header{
+  overflow: hidden;
+  >div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: hidden;
+  }
+  #logo{
+    flex: 0 1 317px;
+    min-width: 152px;
+    max-width: 327px;
+    display: flex;
+    flex: row nowrap;
+    >img{
+      flex: auto;
+    }
+  }
+  #contacts{
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    >*{
+      padding: 0.5rem 0 0 0;
+      font-size: 2rem;
+      text-decoration: none;
+      color: #ffffff;
+    }
+
+    @media screen and (max-width: 440px){
+      display: none;
+    }
+  }
+}

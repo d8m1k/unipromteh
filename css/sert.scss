@@ -1,0 +1,25 @@
+@import "inc/inc";
+
+#sert{
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: -3px;
+  margin-right: -6px;
+}
+#sert>a{
+  padding: 3px;
+  flex: none;
+}
+#sert>a>img{
+  transform: scale3d(1, 1, 1);
+  transition: transform 0.3s ease 0s;
+  width:180px;
+  margin-bottom: 5px;
+  @include box-shadow(5px 5px 5px 0px $background-color-main/2);
+}
+
+#sert>a:hover>img{
+  transform: scale3d(1.05, 1.05, 1.05);
+  transition: transform 0.3s ease 0s;
+}

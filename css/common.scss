@@ -1,0 +1,94 @@
+@import "inc/inc";
+
+* {
+  color: "black";
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  line-height: 1.4em;
+}
+
+h1{
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+  font-size:2.2rem;
+}
+h2{
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+p, li{
+  font-size:1.4rem;
+}
+ul{
+  list-style-position: inside;
+  background: none;
+}
+li{
+  padding-left: 1.5rem;
+}
+html, body, header>div, footer>div{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+html{
+  width: 100%;
+  min-height: 100%;
+}
+img{
+  border: none;
+}
+.background-color-main{
+  color:$background-color-main;
+  display: none;
+}
+.max-width{
+  width: $max-width;
+}
+
+body{
+  font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica;
+  line-height: 1.3;
+  flex: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: stretch;
+}
+header,footer{
+  flex:none;
+}
+.main{
+  flex: auto;
+}
+
+header{
+  @include gradient-vertical($background-color-header, $background-color-main);
+}
+
+.main{
+  @include gradient-vertical($background-color-main, $background-color-footer-dark);
+}
+footer{
+  @include gradient-vertical($background-color-footer-dark, $background-color-footer-light);
+}
+
+
+header>*, .main>*, footer>*{
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+footer>div{
+  padding: 0.5rem;
+}
+.main>div>h1, .main>div>h2{
+  padding: 0 0.5rem;
+}
+
+#map{
+  height: 400px;
+  padding: 0 6px 0 0;
+  margin: 1rem 0 1rem 0;
+}
+

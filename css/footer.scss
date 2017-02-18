@@ -1,0 +1,13 @@
+@import "inc/inc";
+
+footer>div{
+  border-top: solid 1px $background-color-main;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+footer>div>div{
+  padding: 0.2rem 0;
+}
+#zao{
+  font-size: 1.2rem;
+}

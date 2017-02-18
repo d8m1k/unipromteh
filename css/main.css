@@ -1,0 +1,27 @@
+#map > * {
+  -webkit-box-shadow: 5px 5px 5px 0px #285262;
+  -moz-box-shadow: 5px 5px 5px 0px #285262;
+  box-shadow: 5px 5px 5px 0px #285262; }
+
+.main {
+  overflow: hidden; }
+  .main section {
+    max-width: 960px;
+    flex: 0 1 960px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: stretch; }
+  .main section.text {
+    padding: 0 0.5rem; }
+  .main .slider {
+    background: none;
+    height: 312px;
+    overflow: hidden;
+    margin: 1rem 0 0 0;
+    list-style-type: none; }
+    .main .slider li {
+      display: none;
+      padding: 0;
+      margin: 0; }
+      .main .slider li img {
+        margin: 0; }

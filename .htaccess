@@ -1,0 +1,10 @@
+<ifmodule mod_expires.c>
+    <filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 month"
+    </filesmatch>
+</ifmodule>
+
+RewriteCond %{REQUEST_URI} !^/\.unipromteh/((css|js|img|debug|lib|old)/.*|favicon\.ico) [OR]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ index.php [L,QSA]
