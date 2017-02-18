@@ -26,7 +26,6 @@
                 <div class="email">info@unipromteh.com</div>
             </div>
         </div>
-
     </header>
     <nav>
         <div class="title-bar" data-responsive-toggle="example-animated-menu" data-hide-for="medium">
